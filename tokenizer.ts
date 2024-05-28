@@ -9,8 +9,6 @@ export function tokenize(content: string): Token[] {
     for (;;) {
         const token = scanner.scan();
 
-        console.log(token);
-
         tokens.push(token);
 
         if (token.type === TokenType.EOF) {
